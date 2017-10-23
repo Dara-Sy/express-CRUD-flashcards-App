@@ -8,7 +8,7 @@ In this repo you will find two express apps:
 
 Your task is to **retype** the entire `flashcards-app` app into `my-flashcards-app`. (You can copy and paste the style.css and reset.css. And you don't need to include the migrations and seeds.)
 
-It should also use the same database as something we've done earlier this week, so there should be no setup there.
+It should also use the same database as something we've done earlier this unit, so there should be no setup there.
 
 ### BEFORE YOU START!!!
 
