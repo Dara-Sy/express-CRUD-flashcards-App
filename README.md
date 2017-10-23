@@ -20,9 +20,10 @@ Because it is _extremely important_ to get the muscle memory for building an exp
 
 ## 🚀 Completion looks like:
 
-- Your `my-delorean-movies` has a working express app in it.
+- Your `my-flashcards-app` has a working express app in it.
 - Your working express app has been **thoroughly commented**.
-- **IMPORTANT**!!! You have committed after finishing _each file_.
+- Any errors have been recorded in `errors.md`
+- 🚨🚨 **IMPORTANT**!!! 🚨🚨 You have committed after finishing _each file_. A good commit history is _required_ for this homework to be considered complete.
 
 ## 🚀 Your homework submission should include:
 
