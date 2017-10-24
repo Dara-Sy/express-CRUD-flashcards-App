@@ -22,8 +22,8 @@ Flashcard.findById = id => {
 //will also return the row it just inserted
 Flashcard.create = flashcard => {
   return db.one(
-    `INSERT INTO flashcard (question, answer, difficulty, category)
-     VALUES ($/question/, $/answer/, $/difficulty/, $/category/)
+    `INSERT INTO flashcards (question, answer, difficulty, category)
+     VALUES ($1, $2, $3, $4)
      RETURNING *`,
      [flashcard.question, flashcard.answer, flashcard.difficulty, flashcard.category]
   );
@@ -34,12 +34,12 @@ Flashcard.create = flashcard => {
 //Will return updated flashcard
 Flashcard.update = (flashcard, id) => {
   return db.one(
-    `UPDATE flashcard SET
-     question = $/question/,
-     answer = $/answer/,
-     difficulty = $/difficulty/,
-     category = $/category/
-     WHERE id = $/id/
+    `UPDATE flashcards SET
+     question = $1,
+     answer = $2,
+     difficulty = $3,
+     category = $4
+     WHERE id = $5
      RETURNING *`,
      [flashcard.question, flashcard.answer, flashcard.difficulty,flashcard.category, id ]
   );
@@ -50,7 +50,7 @@ Flashcard.update = (flashcard, id) => {
 Flashcard.destroy = id => {
   return db.none(
     `DELETE FROM flashcards
-    WHERE id = $/id/`,
+    WHERE id = $1`,
     [id]
   );
 };

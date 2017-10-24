@@ -7,7 +7,6 @@ const logger = require('morgan');
 //Importing path module
 const path = require('path');
 
-
 //Importing body-parser module
 const bodyParser = require('body-parser');
 
