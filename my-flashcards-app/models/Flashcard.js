@@ -33,7 +33,7 @@ Flashcard.create = flashcard => {
 //Takes two arguments, flashcard and id
 //Will return updated flashcard
 Flashcard.update = (flashcard, id) => {
-  return.one(
+  return db.one(
     `UPDATE flashcard SET
      question = $/question/,
      answer = $/answer/,

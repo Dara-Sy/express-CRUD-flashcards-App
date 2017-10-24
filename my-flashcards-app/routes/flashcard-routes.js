@@ -5,7 +5,7 @@ const express = require('express');
 const flashcardsRouter = express.Router();
 
 //Importing our controller file
-const flashcardsController = require('../controllers/flashcard-controller')
+const flashcardsController = require('../controllers/flashcards-controller')
 
 //GET requests to the root path will be handled by the .index method of our controller
 flashcardsRouter.get('/', flashcardsController.index);

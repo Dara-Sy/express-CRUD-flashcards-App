@@ -49,7 +49,7 @@ flashcardsController.create = (req, res) => {
     difficulty: req.body.category,
    })
    .then(flashcard => {
-      res.redirect(`flashcards/${flashcard.id}`),
+      res.redirect(`flashcards/${flashcard.id}`,
       {flashcard: flashcard});
     })
     .catch( err => {
@@ -86,7 +86,7 @@ flashcardsController.update = (req, res) => {
     difficulty: req.body.category,
   }, req.params.id)
    .then(flashcard => {
-      res.redirect(`/flashcards/${flashcard.id}`),
+      res.redirect(`/flashcards/${flashcard.id}`,
       {flashcard: flashcard});
     })
     .catch( err => {

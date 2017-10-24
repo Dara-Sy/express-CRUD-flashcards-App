@@ -13,7 +13,7 @@ const pgp = require('pg-promise')(options);
 //Since we are in development mode, pgp will set the default port for our local enviornment
 //We also identify the name databse we are working with
 function setDatabase() {
-    if (promise.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
+    if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
       return pgp({
         database: 'tc_flashcards_dev',
         port: 5432,

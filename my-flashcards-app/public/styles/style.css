@@ -180,7 +180,7 @@ form input[type=email]:focus, form input[type=password]:focus {
   outline: 0;
 }
 
-.add form input[type=submit], .edit form input[type=submit], 
+.add form input[type=submit], .edit form input[type=submit],
 .login form input[type=submit], .register form input[type=submit]  {
   background-color: blue;
   display: block;
@@ -198,4 +198,3 @@ form input[type=email]:focus, form input[type=password]:focus {
   outline: 0;
   background-color: blue;
 }
-
