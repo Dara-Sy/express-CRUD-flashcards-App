@@ -1,8 +1,8 @@
-const Flashcard = require('../models/flashcard')
+const Flashcard = require('../models/flashcard');
 const flashcardsController = {};
 
 flashcardsController.index = (req, res) => {
-  Flashcards.findAll()
+  Flashcard.findAll()
   .then(flashcards => {
     res.status(200).render('flashcards/flashcards-index', {flashcards:flashcards});
   })
@@ -51,12 +51,36 @@ flashcardsController.edit = (req, res) => {
 };
 
 flashcardsController.update = (req, res) => {
-  Flashcard.create({
-    question: red.body.quetsion,
+  Flashcard.update({
+    question: red.body.question,
     answer: req.body.answer,
     category: req.body.category,
     difficulty: req.body.difficulty,
+  }, req.params,id)
+  .then(flashcard => {
+    res.redirect(`/flashcards/${flashcard.id}`);
   })
+  .catch( err => {
+    console.log(err);
+    res.status(500).json({error:err});
+  });
+};
+
+flashcardsController.delete = (req, res) => {
+  Flashcard.destroy(req.params.id)
+  .then(() => {
+    res.redirect('/flashcards');
+  })
+    .catch( err => {
+      console.log(err);
+      res.status(500).json({error:err});
+    });
+};
+
+module.exports = flashcardsController;
+
+
+
 
 
 
