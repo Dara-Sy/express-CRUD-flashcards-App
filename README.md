@@ -20,6 +20,15 @@ It should also use the same database as something we've done earlier this unit, 
 
 Because it is _extremely important_ to get the muscle memory for building an express app down!
 
+### Exit Tickets
+**WDI-Rover-Opportunity**🔴
+
+https://docs.google.com/forms/d/13QXHsGt8T-Df3tKxr6MbXy1CztX6m3d5c5m7nhKCzvI/edit
+
+**WDI-Rover-Spirit** 🔵
+
+https://goo.gl/forms/jpUnatSgJnY20C3A3
+
 ## 🚀 Completion looks like:
 
 - Your `my-flashcards-app` has a working express app in it.
