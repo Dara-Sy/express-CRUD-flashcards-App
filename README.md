@@ -41,4 +41,4 @@ https://goo.gl/forms/jpUnatSgJnY20C3A3
 - A pull request created on _this repo_.
 - Completion, comfort, wins, losses, questions... you know the drill.
 
-## This homework is due 🚨 11PM ON MONDAY NIGHT 🚨
+## This homework is due 🚨 11PM ON Thursday NIGHT 🚨
