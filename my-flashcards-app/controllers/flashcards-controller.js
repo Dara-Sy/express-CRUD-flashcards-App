@@ -1,13 +1,7 @@
-//Importing our flashcard model file
 const Flashcard = require('../models/flashcard');
 
-//Initializing empty object
 const flashcardsController = {};
 
-//Creating function to render the flashcards-index.ejs page
-//after receiving promise of query from database
-//Will assign the staus 200
-//else, will indicate error on server side
 flashcardsController.index = (req, res) => {
   Flashcard.findAll()
     .then(flashcards => {
@@ -19,11 +13,6 @@ flashcardsController.index = (req, res) => {
     });
 };
 
-//Creating function to show specific id requested by user
-//The flashcards-show.ejs page will be rendered upon request
-//after receiving promise of query from database
-//Will assign the staus 200
-//else, will indicate error on server side
 flashcardsController.show = (req, res) => {
   Flashcard.findById(req.params.id)
     .then(flashcard => {
@@ -35,10 +24,6 @@ flashcardsController.show = (req, res) => {
     });
 };
 
-//Creating function to show a created flashcard by user
-//Will show the new flashcard page
-//after receiving promise of query from database's new entry
-//else, will indicate error on server side
 flashcardsController.create = (req, res) => {
   Flashcard.create({
     question: req.body.question,
@@ -55,11 +40,6 @@ flashcardsController.create = (req, res) => {
     });
 };
 
-//Creating function to render the flashcards-edit.ejs page
-// where user can edit an existing flashcard
-//after receiving promise of query from database using id
-//Will assign the staus 200
-//else, will indicate error on server side
 flashcardsController.edit = (req, res) => {
   Flashcard.findById(req.params.id)
     .then(flashcard => {
@@ -71,9 +51,6 @@ flashcardsController.edit = (req, res) => {
     });
 };
 
-//Creating function to render the updated flashcard page
-//after receiving promise of query from database's new entry
-//else, will indicate error on server side
 flashcardsController.update = (req, res) => {
   Flashcard.update({
     question: req.body.question,
@@ -90,11 +67,6 @@ flashcardsController.update = (req, res) => {
     });
 };
 
-//Creating function to deletea flashcard from database
-//after receiving promise of query from database
-//Will redirect to flashcards page
-//Will assign the staus 200
-//else, will indicate error on server side
 flashcardsController.delete = (req, res) => {
   Flashcard.destroy(req.params.id)
     .then(() => {
@@ -106,5 +78,4 @@ flashcardsController.delete = (req, res) => {
     });
 };
 
-//Exporting our controlller for use with the routes file
 module.exports = flashcardsController
