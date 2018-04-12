@@ -1,12 +1,14 @@
 # HOMEWORK: EXPRESS REPS!!!!
 
-Tonight, you will be practicing your Express learning so far by _retyping_ the wonderful movies app we've been building together for the past few weeks!!!! YAY!!!
+Tonight, you will be practicing your Express learning so far by _retyping_ the wonderful flashcard app, YAY!!!
+
+This will be your first full CRUD with views! So we get to see the flashcard app working!
 
 In this repo you will find two express apps:
-- `flashcards-app`: a full CRUD version of the flashcards app we've been building together for the past week... with a twist. 🤔
-- `my-flashcards-app`: A file structure that looks a _lot like_ the flashcards app we've been building together... but it's **totally blank**!!!!!
+- `flashcards-app`: a full CRUD version of the flashcards app. 🤔
+- `my-flashcards-app`: A file structure that looks a _lot like_ the flashcards app ... but it's **totally blank**!!!!!
 
-Your task is to **retype** the entire `flashcards-app` app into `my-flashcards-app`. (You can copy and paste the style.css and reset.css. And you don't need to include the migrations and seeds.)
+Your task is to **retype** the entire `flashcards-app` app into `my-flashcards-app`. (You can copy and paste the style.css and reset.css.)
 
 It should also use the same database as something we've done earlier this unit, so there should be no setup there.
 
