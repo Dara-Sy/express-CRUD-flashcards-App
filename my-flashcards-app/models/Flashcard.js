@@ -1,5 +1,5 @@
 //Importing our config js file to query our database
-const db = require('../db/config');
+const db = require('../config/connection');
 
 //Initializing an empty object
 const Flashcard = {};
