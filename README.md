@@ -8,9 +8,9 @@ In this repo you will find two express apps:
 - `flashcards-app`: a full CRUD version of the flashcards app. 🤔
 - `my-flashcards-app`: A file structure that looks a _lot like_ the flashcards app ... but it's **totally blank**!!!!!
 
-Your task is to **retype** the entire `flashcards-app` app into `my-flashcards-app`. (You can copy and paste the style.css and reset.css.)
+Your task is to **retype** the entire `flashcards-app` app into `my-flashcards-app`.
 
-It should also use the same database as something we've done earlier this unit, so there should be no setup there.
+It should also use the same database as what is written in the dbConfig file! Or else nothing will work.....
 
 ### BEFORE YOU START!!!
 
