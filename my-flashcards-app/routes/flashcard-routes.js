@@ -1,7 +1,11 @@
+// Required resources always go first
+// Bring in the express library
 const express = require('express');
 const flashcardsRouter = express.Router();
 
 const flashcardsController = require('../controllers/flashcards-controller');
+
+// Create a GET request handler for '/' (home).
 
 flashcardsRouter.get('/', flashcardsController.index);
 
